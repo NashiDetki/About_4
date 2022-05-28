@@ -4,8 +4,9 @@ console.log(time);
 
 let count = setInterval(function(){
   let date = new Date();
-  time.innerHTML = date.getHours()+':' + date.getMinutes();}, 1000);
+  time.innerHTML = date.getHours()+':' + date.getMinutes() + ":" + date.getSeconds();
 
   const dateObj = document.querySelector(".header__date");
-  const date = new Date();
+  // const date = new Date();
   dateObj.innerHTML = date.getDate() + "/" + (Number(date.getMonth()) + 1) + "/" + date.getFullYear();
+})
